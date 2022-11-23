@@ -1,0 +1,10 @@
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.boxResultado {
+  border: solid 1px black;
+  height: 300px;
+}
