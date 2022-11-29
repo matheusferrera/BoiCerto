@@ -17,7 +17,7 @@ export default function BarraPesquisa() {
       <div className={styles.inputPesquisa}>
             <BiSearchAlt2 style={{color: "grey"}} />
             <input placeholder="Pesquise por uma raça de gado ou uma cidade" value={filtroPesquisa} onChange={(e) => setFiltro(e.target.value)}/>
-        </div>
+      </div>
         <Link href={"pesquisa/"+filtroPesquisa} className={styles.buttonPesquisa}>
             Ver ofertas!
         </Link>
