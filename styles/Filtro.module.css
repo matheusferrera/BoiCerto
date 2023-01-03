@@ -1,17 +1,74 @@
 .container {
-  height: 100%;
-  background-color: rgb(29, 29, 29);
+  display: flex;
+  z-index: -1 !important;
+  flex-direction: row;
+  background-color: rgb(243, 243, 243);
+  min-height: 100vh;
 }
 
-.menuLateral {
+.page{
+  display: flex;
+  flex-direction: column;
+}
+
+.content{
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px 30px;
+  height: 100%;
+  width: 95%;
+  margin-left: 26%;
+  margin-top: 30px;
+  align-content: flex-start;
+  margin-bottom: 60px;
+}
+
+
+.menuLateralFechado {
   background-color: rgb(255, 255, 255);
   position: fixed;
-  width: 23vw;
-  height: 100%;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  width: 3%;
+  height: 20%;
+  margin-top: 20%;
+  border-radius: 10px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 1s;
 }
 
-.menuLateral:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+.load{
+  display: flex;
+  justify-content: center;
+  margin: 200px auto;
+}
+
+.load div{
+  width: 20px;
+  height: 20px;
+  background-color: #0DA800;
+  border-radius: 50%;
+  margin: 0 5px;
+  animation-name: up-and-down;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.load .two{
+  animation-delay: 0.3s;
+}
+
+.load .three{
+  animation-delay: 0.6s;
+}
+
+@keyframes up-and-down {
+
+  to{
+      opacity: 0.2;
+      transform: translateY(-20px);
+      
+  }
 }

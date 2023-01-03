@@ -1,0 +1,34 @@
+
+
+.divMenuSuperior{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.274);
+    background-color: white;
+    border-radius: 10px;
+    z-index: 3;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.container h6{
+    color: grey;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.divUser{
+    background-color: rgb(204, 204, 204);
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+    margin-left: -20px;
+}
+
+
+.divUser svg{
+  padding-top: 8px;
+  padding-left: 10px;
+}
